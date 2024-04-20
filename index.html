@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueBerg • ბლუბერგი</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="website icon" href="Images/Logo1.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-bg" aria-label="navbar">
+        <div class="container-fluid">
+          <a id="logo-container" class="navbar-brand" href="#"
+            ><img id="logo" src="Images/Logo.png" alt="Logo"
+          /></a>
+          <div class="d-flex flex-row column-gap-3" style="min-width: auto">
+            <div class="collapse navbar-collapse nav-menu" id="navbar">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a data-id="navtext1" class="nav-link" href="#aboutus"
+                    >ჩვენ შესახებ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a data-id="navtext2" class="nav-link" href="#ourservices"
+                    >სერვისები</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#trustby">Trust by</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <a data-id="navtext3" href="#bookameeting" class="btn btn-meeting"
+                >დაჯავშნე შეხვედრა</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar"
+                aria-controls="navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="toggleMeetingButton()"
+              >
+                <svg
+                  id="hamburgersvg"
+                  class="svgicon"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="24"
+                    height="24"
+                    rx="12"
+                    stroke="#0A35A0"
+                  />
+                  <path
+                    d="M6.92285 8.75H17.4995"
+                    stroke="#0A35A0"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6.92285 12.5959H17.4995"
+                    stroke="#0A35A0"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6.92285 16.4424H17.4995"
+                    stroke="#0A35A0"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <button data-id="text" id="changelanguage" class="changelang">
+                EN
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container intro-section">
+          <h1 data-id="text1">
+            BlueBerg: ბიზნესის განვითარება <br />
+            ექსპერტული მენეჯმენტით და ინოვაციური <br />
+            მარკეტინგული გადაწყვეტილებებით
+          </h1>
+        </div>
+
+        <div class="gif1">
+          <img src="Images/Gif.gif" alt="Gif1" />
+        </div>
+      </section>
+
+      <section>
+        <div class="container contpadding1 scrollsmooth">
+          <div id="aboutus" class="text-div1">
+            <h3 data-id="text2">ჩვენ შესახებ</h3>
+            <p data-id="text3">
+              ჩვენი გუნდი დაარსდა სხვადასხვა ინდუსტრიის პროფესიონალების
+              გაერთიანებით. თითოეულის მრავალწლიანი გამოცდილება და ხედვა შენი
+              სტაბილურობისა და წარმატების გარანტიაა
+            </p>
+          </div>
+        </div>
+        <div class="mountainimage scrollsmooth"></div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div id="trustby" class="text-div2 scrollsmooth">
+            <h3>TRUST BY</h3>
+            <p data-id="text4">50+ ქართული და საერთაშორისო კომპანია</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="main_wrapper scrollsmooth">
+            <div class="child">
+              <div class="dunkin">
+                <img
+                  src="Images/DunkinDonuts.png"
+                  alt="dunkin"
+                  data-colored-src="Images/DunkinDonutsColored.png"
+                />
+              </div>
+              <div class="wendys">
+                <img
+                  src="Images/wendys.png"
+                  alt="wendys"
+                  data-colored-src="Images/wendyscolored.png"
+                />
+              </div>
+              <div class="twonabiji">
+                <img
+                  src="Images/2nabiji.png"
+                  alt="2nabiji"
+                  data-colored-src="Images/2nabijicolored.png"
+                />
+              </div>
+              <div class="magniti">
+                <img
+                  src="Images/magniti.png"
+                  alt="magniti"
+                  data-colored-src="Images/magniticolored.png"
+                />
+              </div>
+              <div class="eshlie">
+                <img
+                  src="Images/eshlie.png"
+                  alt="eshlie"
+                  data-colored-src="Images/eshliecolored.png"
+                />
+              </div>
+              <div class="euuni">
+                <img
+                  src="Images/euunilogo.png"
+                  alt="euuni"
+                  data-colored-src="Images/euunilogocolored.png"
+                />
+              </div>
+              <div class="campa">
+                <img
+                  src="Images/campa.png"
+                  alt="campa"
+                  data-colored-src="Images/campacolored.png"
+                />
+              </div>
+            </div>
+            <div class="child">
+              <div class="castello">
+                <img
+                  src="Images/castello.png"
+                  alt="castello"
+                  data-colored-src="Images/castellocolored.png"
+                />
+              </div>
+              <div class="agronom">
+                <img
+                  src="Images/agronom.png"
+                  alt="agronom"
+                  data-colored-src="Images/agronomcolored.png"
+                />
+              </div>
+              <div class="itechnics">
+                <img
+                  src="Images/Itechnics.png"
+                  alt="itechnics"
+                  data-colored-src="Images/itechnicscolored.png"
+                />
+              </div>
+              <div class="chita">
+                <img
+                  src="Images/chita.png"
+                  alt="chita"
+                  data-colored-src="Images/chitacolored.png"
+                />
+              </div>
+              <div class="carexpress">
+                <img
+                  src="Images/carexpress.png"
+                  alt="carexpress"
+                  data-colored-src="Images/carexpresscolored.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="gif2 scrollsmooth">
+          <img src="Images/2.gif" alt="Gif2" />
+        </div>
+      </div>
+
+      <section>
+        <div class="container contpadding2">
+          <div class="text-div3 scrollsmooth">
+            <h3 data-id="text5">რას ვაკეთებთ?</h3>
+            <p data-id="text6">მარკეტინგის სრული ციკლი</p>
+          </div>
+        </div>
+
+        <div class="container contpadding3">
+          <div class="content scrollsmooth">
+            <div class="item">
+              <svg
+                id="arrow1"
+                width="39"
+                height="40"
+                viewBox="0 0 39 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 40C0.999999 20.1178 17.5632 4.00008 37.9949 4.00008M33.8894 6.99998L38 3.99999L33.8894 1"
+                  stroke="#0A35A0"
+                />
+              </svg>
+              <p data-id="text7" class="analysis">
+                მიზნებისა და პროცესის <br />
+                ბიზნეს ანალიზი
+              </p>
+              <svg
+                id="arrow2"
+                width="40"
+                height="38"
+                viewBox="0 0 40 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 1C19.8784 1 35.993 17.1175 35.993 36.9994M33.0012 33.0001L36.0006 37L39 33.0001"
+                  stroke="#0A35A0"
+                />
+              </svg>
+            </div>
+            <div class="item">
+              <div class="text_arr">
+                <p data-id="text8">დეველოპმენტი</p>
+                <svg
+                  id="arrow3"
+                  width="8"
+                  height="71"
+                  viewBox="0 0 8 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.88895 20.0376L3.88895 1.03756M3.88895 1.03756L7 5.00004M3.88895 1.03756L1 5.00004"
+                    stroke="#0A35A0"
+                  />
+                </svg>
+                <p data-id="text9">
+                  ვიდეო და ფოტო <br />
+                  გადაღება
+                </p>
+              </div>
+              <div class="text_arr">
+                <p data-id="text10">
+                  ბრენდინგი, პოზიციონირება <br />
+                  და სტრატეგია
+                </p>
+                <svg
+                  id="arrow4"
+                  width="8"
+                  height="81"
+                  viewBox="0 0 8 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.88888 0.962439L3.88889 19.9624M3.88889 19.9624L1 16M3.88889 19.9624L7 16"
+                    stroke="#0A35A0"
+                  />
+                </svg>
+                <p data-id="text11">ციფრული მარკეტინგი</p>
+              </div>
+            </div>
+            <div class="item">
+              <svg
+                id="arrow5"
+                width="40"
+                height="38"
+                viewBox="0 0 40 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40 37C20.1125 37 3.99045 20.8826 3.99046 1.00076M7.00159 4.99992L4.0008 1L1 4.99991"
+                  stroke="#0A35A0"
+                />
+              </svg>
+              <p data-id="text12" class="creative">
+                კრეატიული კონტენტის <br />
+                შექმნა
+              </p>
+              <svg
+                id="arrow6"
+                width="38"
+                height="40"
+                viewBox="0 0 38 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M37 0C37 19.882 20.8855 35.9996 1.00726 35.9996M4.9992 33.0001L1 36L4.9992 39"
+                  stroke="#0A35A0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="gif3 scrollsmooth">
+          <img src="Images/1.gif" alt="Gif3" />
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
+          <div id="ourservices" class="text-div4 scrollsmooth">
+            <h3 data-id="text13">აირჩიე სერვისი</h3>
+            <p data-id="text14">რა სერვისებს გთავაზობს ჩვენი გუნდი?</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div
+            class="accordion scrollsmooth"
+            id="accordionPanelsStayOpenExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  data-id="text15"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  ზრდის სტრატეგია
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <hr />
+                  <ul>
+                    <li data-id="text16">ზრდის პროცესების ჩამოყალიბება</li>
+                    <li data-id="text17">
+                      ღირებულებების, სამიზნე აუდიტორიისა და არხების განსაზღვრა
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  data-id="text18"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  ფასიანი და უფასო არხები
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <hr />
+                  <ul>
+                    <li data-id="text19">Landing Page შექმნა</li>
+                    <li>
+                      Facebook, Instagram, Google Search, Google Display Ads
+                    </li>
+                    <li data-id="text20">SEO / კონტენტ მარკეტინგი</li>
+                    <li data-id="text21">ლიდების მოზიდვის კამპანიები</li>
+                    <li data-id="text22">
+                      Push, E-mail, მარკეტინგული ავტომატიზაცია
+                    </li>
+                    <li data-id="text23">რეკლამის A/B ტესტირება</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  data-id="text24"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  მონაცემთა ანალიზი და ვიზუალიზაცია
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <hr />
+                  <ul>
+                    <li data-id="text25">მონაცემთა შეგროვების გეგმა</li>
+                    <li>Google analytics, Mixpanel, Segment</li>
+                    <li data-id="text26">
+                      მონაცემთა ინტეგრაცია და ავტომატიზაცია Integromat-ის
+                      საშუალებით
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  data-id="text27"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  ბრენდის სტრატეგია და დიზაინი
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <hr />
+                  <ul>
+                    <li data-id="text28">კვლევა და ბრენდინგის ვორქშოპები</li>
+                    <li data-id="text29">ბრენდის პლატფორმა</li>
+                    <li data-id="text30">ვიზუალური და ვერბალური იდენტობა</li>
+                    <li data-id="text31">ბრენდის კრეატიული კომუნიკაცია</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  data-id="text32"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  ბრენდის კრეატიული კომუნიკაცია
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <hr />
+                  <ul>
+                    <li data-id="text33">კრეატიული კონცეფცია</li>
+                    <li data-id="text34">ქოფირაითინგი & არტ დაირექშენი</li>
+                    <li data-id="text35">
+                      დიზაინის შექმნა, რედაქტირება და ილუსტრირება
+                    </li>
+                    <li data-id="text36">ბრენდის გაშლა სოციალურ ქსელებში</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  data-id="text37"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  ვიდეო და ფოტო გადაღება
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <hr />
+                  <ul>
+                    <li data-id="text38">ვიდეო გადაღება</li>
+                    <li data-id="text39">ფოტო გადაღება</li>
+                    <li data-id="text40">2D/3D მოძრავი გრაფიკა</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container contpadding4">
+          <div class="text-div5 scrollsmooth">
+            <h3 data-id="text41">რა პლატფორმებს ვიყენებთ?</h3>
+            <p data-id="text42">
+              ჩვენ მუდმივად ვავითარებთ ჩვენს უნარებს და ვაახლებთ სამუშაო
+              პლატფორმებს
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="main_wrapper2 scrollsmooth">
+            <div class="child2">
+              <div class="greatchildren">
+                <img
+                  src="Images/meta.png"
+                  alt="meta"
+                  data-colored-src="Images/metacolored.png"
+                />
+              </div>
+              <div class="greatchildren">
+                <img
+                  src="Images/googleads.png"
+                  alt="googleads"
+                  data-colored-src="Images/googleadscolored.png"
+                />
+              </div>
+              <div class="greatchildren">
+                <img
+                  src="Images/googleanalytics.png"
+                  alt="googleanalytics"
+                  data-colored-src="Images/googleanalyticscolored.png"
+                />
+              </div>
+              <div class="greatchildren">
+                <img
+                  src="Images/microsoftclarity.png"
+                  alt="microsoftclarity"
+                  data-colored-src="Images/microsoftclaritycolored.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="child2 scrollsmooth">
+            <div class="greatchildren">
+              <img
+                src="Images/facebookads.png"
+                alt="facebookads"
+                data-colored-src="Images/facebookadscolored.png"
+              />
+            </div>
+            <div class="greatchildren">
+              <img
+                src="Images/wordpress.png"
+                alt="wordpress"
+                data-colored-src="Images/wordpresscolored.png"
+              />
+            </div>
+            <div class="greatchildren">
+              <img
+                src="Images/tilda.png"
+                alt="tilda"
+                data-colored-src="Images/tildacolored.png"
+              />
+            </div>
+            <div class="greatchildren">
+              <img
+                src="Images/kommo.png"
+                alt="kommo"
+                data-colored-src="Images/kommocolored.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container contpadding5">
+          <div class="text-div6 scrollsmooth">
+            <h3 data-id="text43">ჩვენი პროექტები</h3>
+            <p data-id="text44">გადახედე ჩვენს ნამუშევარს</p>
+          </div>
+        </div>
+
+        <div class="container1 swiper">
+          <div class="slide-container scrollsmooth">
+            <div class="swiper-fade left"></div>
+            <div class="swiper-fade right"></div>
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work8.png" alt="Habada store" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Habada Store</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/dunkindonutswork2.png" alt="dunkin donuts" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Dunkin' Donuts</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work2.png" alt="campa" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Campa</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/wendyswork.png" alt="wendys" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Wendy's</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work1.png" alt="nima" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Nima Jewerly</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work4.png" alt="Habada" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Habada Store</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work5.png" alt="nima" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Nima Jewerly</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/chveni.png" alt="campa" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Campa</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work3.png" alt="nima" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Nima Jewerly</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/dunkindonutswork3.png" alt="dunkin" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Dunkin' Donuts</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work7.png" alt="nima" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Nima Jewerly</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="Images/work6.png" alt="nima" />
+                  <div class="imageservice">
+                    <p data-id="text53">სერვისი :</p>
+                    <h2 data-id="text54">ფოტო გადაღება</h2>
+                    <h3>Client: Nima Jewerly</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-navBtn">
+            <svg
+              class="imagesliderleftarrow"
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                y="0.0107422"
+                width="18"
+                height="18.347"
+                rx="9"
+                fill="#0A35A0"
+              />
+              <path
+                d="M9.34326 5.2526L5.48612 8.74727L9.34326 12.2419"
+                stroke="#FCF6EE"
+              />
+              <path d="M5.48591 8.74707L13.2002 8.74707" stroke="#FCF6EE" />
+            </svg>
+          </div>
+          <div class="swiper-navBtn">
+            <svg
+              class="imagesliderrightarrow"
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="18"
+                y="18.396"
+                width="18"
+                height="18.347"
+                rx="9"
+                transform="rotate(-180 18 18.396)"
+                fill="#0A35A0"
+              />
+              <path
+                d="M8.65698 13.1541L12.5141 9.65947L8.65698 6.16479"
+                stroke="#FCF6EE"
+              />
+              <path d="M12.5143 9.65967L4.80005 9.65967" stroke="#FCF6EE" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container contpadding6">
+          <div id="bookameeting" class="text-div7 scrollsmooth">
+            <h3 data-id="text45">განვიხილოთ შენი პროექტი</h3>
+            <p data-id="text46">დაჯავშნე შეხვედრა</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="input-container scrollsmooth">
+            <form id="myForm" action="sendmail.php" method="post">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    data-id="text55"
+                    name="name"
+                    id="yourname"
+                    type="text"
+                    placeholder="სახელი"
+                  />
+                  <p class="error-text" id="error-name"></p>
+                </div>
+                <div class="col-6">
+                  <input
+                    data-id="text56"
+                    name="company"
+                    id="yourcompanyname"
+                    type="text"
+                    placeholder="კომპანიის დასახელება"
+                  />
+                  <p class="error-text" id="error-company"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    data-id="text57"
+                    name="email"
+                    id="emailInput"
+                    type="email"
+                    placeholder="ელ-ფოსტა"
+                  />
+                  <p class="error-text" id="error-email"></p>
+                </div>
+                <div class="col-6">
+                  <input
+                    data-id="text58"
+                    name="phone"
+                    id="phone"
+                    type="tel"
+                    placeholder="ტელეფონის ნომერი"
+                  />
+                  <p class="error-text" id="error-phone"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <input
+                    data-id="text59"
+                    name="service"
+                    id="service"
+                    type="text"
+                    placeholder="რა სერვისით ხარ დაინტერესებული?"
+                  />
+                  <p class="error-text" id="error-service"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <button
+                    data-id="text46"
+                    id="formbtn"
+                    type="submit"
+                    name="submit"
+                  >
+                    დაჯავშნე შეხვედრა
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container contpadding7">
+        <div class="footer-image">
+          <img src="Images/gif-mountainee.gif" alt="mountain" />
+        </div>
+        <div class="footer-content">
+          <div class="footer-content-icons">
+            <a target="_blank" href="https://www.facebook.com/blueberggeorgia"
+              ><img
+                src="Images/facebook.png"
+                alt="facebook"
+                data-colored-src="Images/facebookcolored.png"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/blueberg.agency/"
+              ><img
+                src="Images/instagram.png"
+                alt="instagram"
+                data-colored-src="Images/instagramcolored.png"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/blueberggeorgia/"
+              ><img
+                src="Images/linkedin.png"
+                alt="linkedin"
+                data-colored-src="Images/linkedincolored.png"
+            /></a>
+            <a
+              ><img
+                src="Images/behance.png"
+                alt="behance"
+                data-colored-src="Images/behancecolored.png"
+            /></a>
+          </div>
+          <div class="footer-text">
+            <span class="footer-content-privacy"><a>Privacy Policy</a></span>
+            <span class="footer-content-brand-name">BlueBerg © 2024</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

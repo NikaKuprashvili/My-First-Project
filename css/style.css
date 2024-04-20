@@ -1,0 +1,1615 @@
+@font-face {
+  font-family: "MersadMed";
+  src: url("../Mersad/WebTT/Mersad Medium.eot");
+  src: url("../Mersad/WebTT/Mersad Medium.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Medium.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadBlack";
+  src: url("../Mersad/WebTT/Mersad Black.eot");
+  src: url("../Mersad/WebTT/Mersad Black.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Black.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mersad";
+  src: url("../Mersad/WebTT/Mersad Regular.eot");
+  src: url("../Mersad/WebTT/Mersad Regular.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Regular.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadBold";
+  src: url("../Mersad/WebTT/Mersad Bold.eot");
+  src: url("../Mersad/WebTT/Mersad Bold.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Bold.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MersadExtBd";
+  src: url("../Mersad/WebTT/Mersad ExtraBold.eot");
+  src: url("../Mersad/WebTT/Mersad ExtraBold.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad ExtraBold.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadSemBd";
+  src: url("../Mersad/WebTT/Mersad SemiBold.eot");
+  src: url("../Mersad/WebTT/Mersad SemiBold.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad SemiBold.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadThin";
+  src: url("../Mersad/WebTT/Mersad Thin.eot");
+  src: url("../Mersad/WebTT/Mersad Thin.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Thin.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
+body {
+  background-color: rgba(252, 246, 238, 1);
+}
+
+header {
+  background: no-repeat center/cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: rgba(252, 246, 238, 1);
+  border-bottom: 2px solid #ddd;
+  z-index: 10;
+}
+
+.navbar-nav li {
+  padding: 0px 15px;
+}
+
+.navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  position: relative;
+}
+
+.navbar-brand {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-top: 2px;
+  color: rgba(10, 53, 160, 1);
+  font-family: "MersadMed";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.438rem;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  font-family: "MersadBold";
+  color: rgba(10, 53, 160, 1);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+}
+
+.navbar > .container-fluid {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn {
+  --bs-btn-hover-border-color: none;
+}
+
+.btn-meeting:hover {
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  color: rgba(10, 53, 160, 1);
+}
+
+.btn-meeting {
+  font-family: "MersadMed";
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 5px;
+  border-radius: 25px;
+  background-color: rgba(10, 53, 160, 1);
+  color: rgba(252, 246, 238, 1);
+  font-size: 19px;
+}
+
+.move-left-eng {
+  margin-right: 130px !important;
+}
+.move-left-geo {
+  margin-right: 140px !important;
+}
+
+#logo {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.changelang {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(252, 246, 238, 1);
+  background-color: rgba(10, 53, 160, 1);
+  border-radius: 9px;
+  width: 30px;
+  height: auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.changelang:hover {
+  color: rgba(10, 53, 160, 1);
+  background-color: rgba(252, 246, 238, 1);
+}
+
+.intro-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.intro-section h1 {
+  text-align: center;
+  font-family: "MersadBlack";
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 2.875rem;
+  letter-spacing: 0em;
+  border: none;
+  color: rgba(10, 53, 160, 1);
+  text-transform: uppercase;
+  z-index: 1;
+}
+.gif1 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-div1 h3 {
+  text-align: center;
+  color: rgba(10, 53, 160, 1);
+  font-family: "MersadBlack" !important;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.875rem;
+  letter-spacing: 0em;
+}
+
+.text-div1 p {
+  text-align: center;
+  font-family: "Mersad" !important;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-transform: uppercase;
+}
+
+.mountainimage {
+  background: url(../Images/mountain1.png) no-repeat center/cover;
+  width: 100%;
+  height: 30.7rem;
+}
+
+.text-div2 h3 {
+  text-align: center;
+  color: rgba(10, 53, 160, 1);
+  font-family: "MersadBlack";
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.875rem;
+  letter-spacing: 0em;
+}
+
+.text-div2 p {
+  text-align: center;
+  font-family: "Mersad";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-transform: uppercase;
+}
+
+.main_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dunkin,
+.wendys,
+.campa,
+.castello,
+.chita,
+.agronom,
+.carexpress,
+.twonabiji,
+.magniti,
+.eshlie,
+.itechnics,
+.euuni {
+  padding: 18px;
+}
+
+.child img {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.child img:hover {
+  opacity: 0.8;
+  -webkit-animation: fade 1.5s forwards;
+          animation: fade 1.5s forwards;
+}
+
+.gif2 img {
+  float: right;
+  width: 414px;
+  height: 363px;
+}
+
+@media (max-width: 385px) {
+  .gif2 img {
+    width: 370px;
+    height: 320px;
+  }
+}
+
+.contpadding1 {
+  padding-top: 200px;
+}
+
+.contpadding2 {
+  padding-top: 400px;
+}
+
+.contpadding3 {
+  padding-top: 30px;
+}
+
+.text-div3 h3 {
+  font-family: "MersadBlack";
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.625rem;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+
+.text-div3 p {
+  font-family: "MersadBlack";
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 2.563rem;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .text-div3 h3 {
+    font-size: 3.5rem;
+  }
+
+  .text-div3 p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .text-div3 h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 422px) {
+  .text-div3 h3 {
+    font-size: 2.5rem;
+  }
+}
+
+.content {
+  width: 900px;
+  margin: auto;
+  max-width: 100%;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.item p {
+  cursor: pointer;
+  text-align: center;
+  font-family: "Mersad" !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  -webkit-transition: background-color 0.4s, color 0.4s, -webkit-transform 0.4s;
+  transition: background-color 0.4s, color 0.4s, -webkit-transform 0.4s;
+  -o-transition: background-color 0.4s, color 0.4s, transform 0.4s;
+  transition: background-color 0.4s, color 0.4s, transform 0.4s;
+  transition: background-color 0.4s, color 0.4s, transform 0.4s, -webkit-transform 0.4s;
+}
+
+.item p:hover {
+  background-color: rgba(10, 53, 160, 1);
+  color: rgba(252, 246, 238, 1);
+  border-radius: 0.563rem;
+}
+
+.item p:not(:hover) {
+  border-radius: 0.563rem;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.analysis,
+.creative {
+  position: relative;
+}
+
+.analysis {
+  right: 25px;
+}
+
+.creative {
+  right: 35px;
+}
+
+#arrow1,
+#arrow2,
+#arrow3,
+#arrow4,
+#arrow5,
+#arrow6 {
+  position: relative;
+}
+
+#arrow1 {
+  left: 73px;
+  top: 30px;
+}
+
+#arrow2 {
+  right: 120px;
+  top: 32px;
+}
+
+#arrow3 {
+  bottom: 10px;
+  left: 88px;
+}
+
+.arrow3eng {
+  left: 77px !important;
+}
+
+#arrow4 {
+  left: 210px;
+  bottom: 15px;
+}
+
+.arrow4eng {
+  left: 157px !important;
+}
+
+#arrow5 {
+  left: 67px;
+  top: 5px;
+}
+
+#arrow6 {
+  right: 125px;
+  top: 10px;
+}
+
+@media (max-width: 991px) {
+  .item p {
+    font-size: 1rem;
+  }
+  #arrow1 {
+    width: 30px;
+    left: 63px;
+    top: 20px;
+  }
+  #arrow2 {
+    width: 30px;
+    right: 100px;
+    top: 22px;
+  }
+
+  #arrow3 {
+    bottom: 10px;
+    left: 63px;
+  }
+
+  .arrow3eng {
+    left: 51px !important;
+  }
+
+  #arrow4 {
+    left: 128px;
+    bottom: 10px;
+  }
+
+  .arrow4eng {
+    left: 94px !important;
+  }
+  
+
+  #arrow5 {
+    width: 30px;
+    left: 62px;
+    top: 0;
+  }
+
+  #arrow6 {
+    width: 30px;
+    right: 105px;
+    top: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item p {
+    font-size: 0.9rem;
+  }
+
+  #arrow1 {
+    width: 23px;
+    left: 35px;
+    top: 12px;
+  }
+  #arrow2 {
+    width: 23px;
+    right: 70px;
+    top: 15px;
+  }
+
+  #arrow3 {
+    width: 7px;
+    bottom: 10px;
+    left: 46px;
+  }
+
+  .arrow3eng {
+    left: 37px !important;
+  }
+
+
+
+  #arrow4 {
+    width: 7px;
+    left: 125px;
+    bottom: 10px;
+  }
+  #arrow5 {
+    width: 23px;
+    left: 36px;
+  }
+
+  #arrow6 {
+    width: 23px;
+    right: 71px;
+    top: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .item p {
+    font-size: 0.7rem;
+  }
+  .item {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  #arrow1 {
+    left: 35px;
+    top: 5px;
+  }
+
+  #arrow2 {
+    right: 75px;
+    top: 6px;
+  }
+
+  #arrow3 {
+    width: 6px;
+    bottom: 10px;
+    left: 33px;
+  }
+
+  .arrow3eng {
+    left: 30px !important;
+  }
+
+  #arrow4 {
+    width: 6px;
+    left: 87px;
+    bottom: 12px;
+  }
+
+  .arrow4eng {
+    left: 64px !important;
+  }
+  #arrow5 {
+    width: 23px;
+    top: -6px !important;
+  }
+
+  #arrow6 {
+    width: 23px;
+    right: 71px;
+    top: -6px !important;
+  }
+}
+
+@media (max-width: 411px) {
+  #arrow1 {
+    left: 25px;
+  }
+
+  #arrow2 {
+    right: 65px;
+    top: 6px;
+  }
+
+  #arrow3 {
+    bottom: 10px;
+    left: 26px;
+  }
+
+  .arrow3eng {
+    left: 20px !important;
+  }
+
+  #arrow4 {
+    left: 91px;
+    bottom: 12px;
+  }
+
+  #arrow5 {
+    width: 23px;
+    left: 20px;
+  }
+
+  #arrow6 {
+    right: 68px;
+    top: -6px !important;
+  }
+}
+
+@media(max-width:375px) {
+  #arrow1 {
+    left: 15px;
+  }
+  #arrow3 {
+    left: 18px;
+  }
+  #arrow5 {
+    left: 10px;
+  }
+}
+
+.gif3 img {
+  width: 372px;
+  height: 385px;
+}
+
+@media (max-width: 385px) {
+  .gif3 img {
+    width: 320px;
+    height: 330px;
+  }
+}
+
+.text-div4 h3 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.625rem;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: "MersadBlack";
+  color: rgba(10, 53, 160, 1);
+}
+
+.text-div4 p {
+  font-family: "MersadBlack";
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 2.563rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(10, 53, 160, 1);
+}
+
+@media (max-width: 991px) {
+  .text-div4 p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-div4 h3 {
+    font-size: 3.3rem;
+  }
+
+  .text-div4 p {
+    font-size: 1.51rem;
+  }
+}
+@media (max-width: 482px) {
+  .text-div4 h3 {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .text-div4 h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 371px) {
+  .text-div4 h3 {
+    font-size: 2rem;
+  }
+}
+
+
+.accordion-button::after {
+  background-image: url(../Images/accordarrowsvg1.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../Images/accordarrowsvg2.svg);
+}
+
+.accordion {
+  --bs-accordion-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-border-color: none;
+  --bs-accordion-active-color: rgba(252, 246, 238, 1);
+  --bs-accordion-inner-border-radius: none;
+}
+.accordion-body ul li {
+  font-family: "MersadMed" !important;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: rgba(252, 246, 238, 1);
+}
+
+.accordion-body {
+  position: relative;
+}
+
+.accordion-item {
+  margin-bottom: 8px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.accordion-item:hover {
+  background-color: rgba(10, 53, 160, 0.09);
+}
+
+.accordion-collapse {
+  background-color: rgba(10, 53, 160, 1);
+  margin-top: -16px;
+}
+.accordion-header {
+  border: 1.7px solid rgba(10, 53, 160, 1);
+  border-radius: 9px;
+}
+
+.collapsed-bg {
+  background-color: rgba(10, 53, 160, 1) !important;
+}
+
+.accordion-button {
+  font-family: "MersadExtBd";
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-transform: uppercase;
+}
+
+@media (max-width: 431px) {
+  .accordion-button {
+    font-size: 1.2rem;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background: none;
+}
+
+.accordion-collapse {
+  border-radius: 12px;
+}
+
+hr {
+  position: relative;
+  top: -10px;
+  width: 100%;
+  border: 1.5px solid rgba(252, 246, 238, 1);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.text-div5 h3 {
+  font-family: "MersadBlack";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 46px;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+
+.text-div5 p {
+  font-family: "Mersad";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .text-div5 h3 {
+    font-size: 32px;
+  }
+}
+
+.contpadding4 {
+  padding-top: 150px;
+}
+
+.main_wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.child2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.child2 img {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.child2 img:hover {
+  opacity: 0.5;
+  -webkit-animation: fade 1.5s forwards;
+          animation: fade 1.5s forwards;
+}
+
+.greatchildren {
+  padding: 18px;
+}
+
+.text-div6 h3 {
+  font-family: "MersadBlack";
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 74px;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+
+.text-div6 p {
+  font-family: "MersadBlack";
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 41px;
+  letter-spacing: 0em;
+  color: rgba(10, 53, 160, 1);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .text-div6 h3 {
+    font-size: 54px;
+  }
+
+  .text-div6 p {
+    font-size: 34px;
+  }
+}
+@media (max-width: 540px) {
+  .text-div6 p {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 533px) {
+  .text-div6 h3 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 439px) {
+  .text-div6 h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 432px) {
+  .text-div6 p {
+    font-size: 22px;
+  }
+}
+.contpadding5 {
+  padding-top: 150px;
+}
+
+.container1 {
+  max-width: 1920px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.slide-container {
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 8px;
+  --bs-card-border-color: none;
+}
+
+.card .image-box {
+  height: 426px;
+  position: relative;
+}
+
+.imageservice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding-top: 320px;
+  padding-left: 15px;
+  background: rgba(10, 53, 160, 0.55);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.imageservice:hover {
+  opacity: 1;
+}
+
+.imageservice p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 12px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  font-family: "MersadThin";
+}
+
+.imageservice h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  font-family: "MersadExtBd";
+}
+
+.imageservice h3 {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Mersad";
+}
+
+.image-box svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-navBtn {
+  position: relative;
+}
+
+.arrowshadow {
+  position: absolute;
+}
+.imagesliderleftarrow,
+.imagesliderrightarrow {
+  z-index: 1;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+.imagesliderleftarrow {
+  bottom: 200px;
+  left: 10px;
+}
+
+.imagesliderrightarrow {
+  bottom: 200px;
+  right: 10px;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+.card-wrapper {
+  position: relative;
+}
+.swiper-navBtn {
+  position: relative;
+  z-index: 4;
+}
+
+.swiper-fade {
+  height: 300px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 4;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 80px 250px rgba(252, 246, 238, 0.76);
+          box-shadow: 0 0 80px 250px rgba(252, 246, 238, 0.76);
+}
+.swiper-fade.left {
+  left: -155px !important;
+}
+.swiper-fade.right {
+  right: -155px !important;
+}
+
+.text-div7 h3 {
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 41px;
+  letter-spacing: 0em;
+  font-family: "MersadBlack";
+  text-transform: uppercase;
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+
+.text-div7 p {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 74px;
+  letter-spacing: 0em;
+  font-family: "MersadBlack";
+  color: rgba(10, 53, 160, 1);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .text-div7 p {
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 530px) {
+  .text-div7 h3 {
+    font-size: 30px;
+  }
+  .text-div7 p {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 454px) {
+  .text-div7 h3 {
+    font-size: 25px;
+  }
+  .text-div7 p {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 401px) {
+  .text-div7 p {
+    font-size: 32px;
+  }
+}
+.contpadding6 {
+  padding: 100px 0px 10px 0px;
+}
+
+.input-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.input-container button,
+.input-container input {
+  width: 100%;
+  border-radius: 9px;
+  padding: 15px;
+}
+
+.input-container button {
+  color: rgba(252, 246, 238, 1);
+  background-color: rgba(10, 53, 160, 1);
+  border-radius: 9px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: 0em;
+  font-family: "MersadExtBd";
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: rgba(13, 70, 210, 1);
+}
+
+input {
+  outline: none;
+  border-color: rgba(10, 53, 160, 1);
+}
+
+input:focus {
+  border-color: rgba(0, 133, 255, 1);
+}
+
+input::-webkit-input-placeholder {
+  font-size: 19px;
+  font-weight: 293;
+  line-height: 25px;
+  letter-spacing: 0em;
+  font-family: "Mersad";
+  color: rgba(10, 53, 160, 0.55);
+}
+
+input::-moz-placeholder {
+  font-size: 19px;
+  font-weight: 293;
+  line-height: 25px;
+  letter-spacing: 0em;
+  font-family: "Mersad";
+  color: rgba(10, 53, 160, 0.55);
+}
+
+input:-ms-input-placeholder {
+  font-size: 19px;
+  font-weight: 293;
+  line-height: 25px;
+  letter-spacing: 0em;
+  font-family: "Mersad";
+  color: rgba(10, 53, 160, 0.55);
+}
+
+input::-ms-input-placeholder {
+  font-size: 19px;
+  font-weight: 293;
+  line-height: 25px;
+  letter-spacing: 0em;
+  font-family: "Mersad";
+  color: rgba(10, 53, 160, 0.55);
+}
+
+input::placeholder {
+  font-size: 19px;
+  font-weight: 293;
+  line-height: 25px;
+  letter-spacing: 0em;
+  font-family: "Mersad";
+  color: rgba(10, 53, 160, 0.55);
+}
+
+
+@media(max-width:480px) {
+  input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  input::-moz-placeholder {
+    font-size: 15px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  input::placeholder {
+    font-size: 15px;
+  }
+}
+
+.row > * {
+  padding-right: 0;
+}
+
+.row {
+  margin: 7px 0px;
+}
+
+.contpadding7 {
+  padding-top: 150px;
+}
+
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px 5px 5px;
+  color: rgba(10, 53, 160, 1);
+}
+
+.footer-content-icons a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer-content-icons a img:hover {
+  opacity: 0.5;
+  -webkit-animation: fade 1s forwards;
+          animation: fade 1s forwards;
+}
+
+
+.footer-content-privacy a {
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: inherit;
+}
+
+.footer-content-brand-name {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.error-text {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "MersadExtBd";
+  color: rgb(177, 7, 7);
+  display: none;
+}
+
+.errorfound {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .footer-image {
+    margin: 0 auto;
+    max-width: 35%;
+    margin-bottom: -58px;
+  }
+
+  .footer-content {
+    border-top: 2px solid rgba(10, 53, 160, 1);
+    padding: 15px 0px 0px 0px;
+  }
+
+  .footer-content-icons a:nth-child(1) img {
+    width: 35px;
+    height: 34px;
+    margin-right: 8px;
+  }
+
+  .footer-content-icons a:nth-child(2) img {
+    width: 31.5px;
+    height: 30.75px;
+    margin-right: 8px;
+  }
+
+  .footer-content-icons a:nth-child(3) img {
+    width: 30.75px;
+    height: 30.75px;
+    margin-right: 8px;
+  }
+
+  .footer-content-icons a:nth-child(4) img {
+    width: 34.17px;
+    height: 22.54px;
+    margin-right: 8px;
+  }
+
+  .footer-content-privacy a {
+    font-family: "Mersad" !important;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: rgba(10, 53, 160, 1);
+    margin-top: 5px;
+  }
+
+  .footer-content-brand-name {
+    font-family: "MersadSemBd" !important;
+    font-size: 17px;
+    font-weight: 523;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: rgba(10, 53, 160, 1);
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar > .container-fluid {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .changelang {
+    right: 19px;
+    top: 85px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav li {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .btn-meeting {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 5px;
+    border-radius: 25px;
+    background-color: rgba(10, 53, 160, 1);
+    font-size: 15px;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .nav-menu {
+    background-color: rgba(10, 53, 160, 1);
+    border-radius: 15px;
+    padding: 0px 2px;
+    position: absolute;
+    top: 35px;
+    right: 45px;
+  }
+
+  .nav-link {
+    text-align: right;
+    border-radius: 5px;
+    padding: 7px;
+    color: rgba(252, 246, 238, 1);
+    font-size: 1.05rem;
+  }
+
+  .nav-link:hover {
+    font-family: "MersadBold";
+    color: rgba(252, 246, 238, 1);
+  }
+
+  .changelang {
+    right: 9px;
+    top: 80px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+  .child,
+  .child2 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .child img,
+  .child2 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .child {
+    text-align: center;
+  }
+
+  .dunkin,
+  .wendys,
+  .campa,
+  .castello,
+  .chita,
+  .agronom,
+  .carexpress,
+  .euuni {
+    width: 50%;
+  }
+
+  .twonabiji,
+  .magniti {
+    width: 33.333333%;
+  }
+
+  .itechnics {
+    width: 100%;
+  }
+
+  .greatchildren {
+    width: 50%;
+  }
+
+  .child2 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-fade.left {
+    left: -235px !important;
+  }
+  .swiper-fade.right {
+    right: -245px !important;
+  }
+}
+
+@media (max-width: 431px) {
+  .intro-section h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 388px) {
+  .dunkin,
+  .wendys,
+  .campa,
+  .castello,
+  .chita,
+  .agronom,
+  .carexpress,
+  .twonabiji,
+  .magniti,
+  .eshlie,
+  .itechnics,
+  .euuni {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 365px) {
+  .btn-meeting {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 5px;
+    border-radius: 25px;
+    background-color: rgba(10, 53, 160, 1);
+    font-size: 12px;
+    color: rgba(252, 246, 238, 1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 365px) {
+  .footer-content-privacy a {
+    font-size: 10px;
+  }
+
+  .footer-content-brand-name {
+    font-size: 12px;
+  }
+}
