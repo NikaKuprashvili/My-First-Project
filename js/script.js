@@ -91,11 +91,15 @@ let swiper = new Swiper(".slide-container", {
     1500: {
       slidesPerView: 5,
     },
+    1920: {
+      slidesPerView: 6,
+    },
   },
 });
 
 let svgIcon = document.getElementById("hamburgersvg");
 let navBtn = document.querySelector(".navbar-toggler");
+let navBigBtn = document.querySelector(".btn-meeting");
 let isOpen = false;
 
 svgIcon.addEventListener("click", () => {
@@ -112,6 +116,10 @@ svgIcon.addEventListener("click", () => {
                 <path d="M6.92285 16.4424H17.4995" stroke="#0A35A0" stroke-linecap="round" />
             </svg>
         `;
+    if (window.innerWidth <= 499) {
+      navBigBtn.style.opacity = "1";
+      navBigBtn.style.pointerEvents = "auto";
+    }
   } else {
     svgIcon.innerHTML = `
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,13 +129,17 @@ svgIcon.addEventListener("click", () => {
                 <path d="M6.92285 16.4423H17.4995" stroke="#FCF6EE" stroke-linecap="round"/>
             </svg>
         `;
+    if (window.innerWidth <= 499) {
+      navBigBtn.style.opacity = "0";
+      navBigBtn.style.pointerEvents = "none";
+    }
   }
   isOpen = !isOpen;
 });
 
 let languageChanger = document.getElementById("changelanguage");
-let arrow3 = document.getElementById("arrow3");
-let arrow4 = document.getElementById("arrow4");
+// let arrow3 = document.getElementById("arrow3");
+// let arrow4 = document.getElementById("arrow4");
 let isEnglish = true;
 
 languageChanger.addEventListener("click", async function () {
@@ -139,15 +151,15 @@ languageChanger.addEventListener("click", async function () {
       jsonData = await response.json();
       isEnglish = false;
       languageChanger.classList.add("test");
-      arrow3.classList.add("arrow3eng");
-      arrow4.classList.add("arrow4eng");
+      // arrow3.classList.add("arrow3eng");
+      // arrow4.classList.add("arrow4eng");
     } else {
       let response = await fetch("../TextJSON/GeText.json");
       jsonData = await response.json();
       isEnglish = true;
       languageChanger.classList.remove("test");
-      arrow3.classList.remove("arrow3eng");
-      arrow4.classList.remove("arrow4eng");
+      // arrow3.classList.remove("arrow3eng");
+      // arrow4.classList.remove("arrow4eng");
     }
 
     document.querySelectorAll("[data-id]").forEach((element) => {
@@ -255,8 +267,8 @@ myForm.addEventListener("submit", function (event) {
     }
   }
 
-  this.querySelectorAll(".error-text").forEach((element) => {
-    element.innerHTML = " ";
+  this.querySelectorAll(".error-text").forEach((el) => {
+    el.innerHTML = " ";
   });
 
   for (let item in errors) {
