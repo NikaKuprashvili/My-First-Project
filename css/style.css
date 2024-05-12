@@ -1,77 +1,16 @@
 @font-face {
-  font-family: "MersadMed";
-  src: url("../Mersad/WebTT/Mersad Medium.eot");
-  src: url("../Mersad/WebTT/Mersad Medium.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad Medium.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "MersadBlack";
-  src: url("../Mersad/WebTT/Mersad Black.eot");
-  src: url("../Mersad/WebTT/Mersad Black.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad Black.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
   font-family: "Mersad";
-  src: url("../Mersad/WebTT/Mersad Regular.eot");
-  src: url("../Mersad/WebTT/Mersad Regular.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad Regular.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad Regular.ttf") format("truetype");
+  src: url("../Mersad.ttf");
   font-style: normal;
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "MersadBold";
-  src: url("../Mersad/WebTT/Mersad Bold.eot");
-  src: url("../Mersad/WebTT/Mersad Bold.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad Bold.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "MersadExtBd";
-  src: url("../Mersad/WebTT/Mersad ExtraBold.eot");
-  src: url("../Mersad/WebTT/Mersad ExtraBold.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad ExtraBold.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "MersadSemBd";
-  src: url("../Mersad/WebTT/Mersad SemiBold.eot");
-  src: url("../Mersad/WebTT/Mersad SemiBold.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad SemiBold.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad SemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "MersadThin";
-  src: url("../Mersad/WebTT/Mersad Thin.eot");
-  src: url("../Mersad/WebTT/Mersad Thin.eot") format("embedded-opentype"),
-    url("../Mersad/WebTT/Mersad Thin.woff") format("woff"),
-    url("../Mersad/WebTT/Mersad Thin.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Mersad" !important;
 }
 
 html {
@@ -81,6 +20,7 @@ html {
 
 body {
   background-color: rgba(252, 246, 238, 1);
+  overflow-x: hidden;
 }
 
 header {
@@ -123,16 +63,16 @@ header {
 .nav-link {
   margin-top: 2px;
   color: rgba(10, 53, 160, 1);
-  font-family: "MersadMed";
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.438rem;
   letter-spacing: 0em;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .nav-link:hover {
-  font-family: "MersadBold";
+  font-weight: 900;
   color: rgba(10, 53, 160, 1);
 }
 
@@ -163,7 +103,6 @@ header {
 }
 
 .btn-meeting {
-  font-family: "MersadMed";
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 5px;
@@ -223,7 +162,6 @@ header {
 
 .intro-section h1 {
   text-align: center;
-  font-family: "MersadBlack";
   font-size: 2.2rem;
   font-weight: 900;
   line-height: 2.875rem;
@@ -244,16 +182,14 @@ header {
 .text-div1 h3 {
   text-align: center;
   color: rgba(10, 53, 160, 1);
-  font-family: "MersadBlack" !important;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 900;
-  line-height: 2.875rem;
-  letter-spacing: 0em;
+  line-height: 46px;
+  text-transform: uppercase;
 }
 
 .text-div1 p {
   text-align: center;
-  font-family: "Mersad" !important;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -271,7 +207,6 @@ header {
 .text-div2 h3 {
   text-align: center;
   color: rgba(10, 53, 160, 1);
-  font-family: "MersadBlack";
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 2.875rem;
@@ -280,13 +215,30 @@ header {
 
 .text-div2 p {
   text-align: center;
-  font-family: "Mersad";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.75rem;
   letter-spacing: 0em;
   color: rgba(10, 53, 160, 1);
   text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .text-div1 h3 {
+    font-size: 2rem;
+  }
+
+  .text-div1 p {
+    font-size: 1.2rem;
+  }
+
+  .text-div2 h3 {
+    font-size: 2rem;
+  }
+
+  .text-div2 p {
+    font-size: 1.2rem;
+  }
 }
 
 .main_wrapper {
@@ -369,27 +321,23 @@ header {
 }
 
 .contpadding3 {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .text-div3 h3 {
-  font-family: "MersadBlack";
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 900;
-  line-height: 4.625rem;
-  letter-spacing: 0em;
-  color: rgba(10, 53, 160, 1);
+  line-height: 73.6px;
   text-align: center;
+  color: rgba(10, 53, 160, 1);
 }
 
 .text-div3 p {
-  font-family: "MersadBlack";
-  font-size: 2.25rem;
-  font-weight: 900;
-  line-height: 2.563rem;
-  letter-spacing: 0em;
-  color: rgba(10, 53, 160, 1);
+  font-size: 36px;
+  font-weight: 655;
+  line-height: 41.4px;
   text-align: center;
+  color: rgba(10, 53, 160, 1);
 }
 @media (max-width: 768px) {
   .text-div3 h3 {
@@ -403,202 +351,13 @@ header {
 
 @media (max-width: 489px) {
   .text-div3 h3 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 422px) {
-  .text-div3 h3 {
-    font-size: 2.5rem;
-  }
-}
-
-.content {
-  width: 900px;
-  margin: auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.dev,
-.brand {
-  margin-bottom: 50px;
-}
-
-.content img {
-  position: absolute;
-  top: 38px;
-  left: 200px;
-  z-index: -1;
-}
-@media (max-width: 991px) {
-  .content img {
-    width: 300px;
-    top: 30px;
-    left: 170px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content img {
-    width: 280px;
-    top: 30px;
-    left: 95px;
-  }
-}
-.item p {
-  cursor: pointer;
-  text-align: center;
-  font-family: "Mersad";
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0em;
-  color: rgba(10, 53, 160, 1);
-  -webkit-transition: background-color 0.4s, color 0.4s, -webkit-transform 0.4s;
-  transition: background-color 0.4s, color 0.4s, -webkit-transform 0.4s;
-  -o-transition: background-color 0.4s, color 0.4s, transform 0.4s;
-  transition: background-color 0.4s, color 0.4s, transform 0.4s;
-  transition: background-color 0.4s, color 0.4s, transform 0.4s,
-    -webkit-transform 0.4s;
-}
-
-.item p:hover {
-  background-color: rgba(10, 53, 160, 1);
-  color: rgba(252, 246, 238, 1);
-  border-radius: 0.563rem;
-}
-
-.item p:not(:hover) {
-  border-radius: 0.563rem;
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-.analysis,
-.creative {
-  position: relative;
-}
-
-.analysis {
-  right: 25px;
-}
-
-.creative {
-  right: 35px;
-}
-
-@media (max-width: 991px) {
-  .item p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .item p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 560px) {
-  .item p {
-    font-size: 0.7rem;
-  }
-  .item {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    font-size: 2rem;
   }
 
-  .content img {
-    width: 260px;
-    top: 20px;
-    left: 105px;
-  }
-
-  .content {
-    width: 500px;
+  .text-div3 p {
+    font-size: 1.5em;
   }
 }
-
-@media (max-width: 528px) {
-  .content {
-    width: 410px;
-  }
-
-  .content img {
-    width: 240px;
-    top: 25px;
-    left: 65px;
-  }
-  .creative {
-    right: 25px;
-  }
-}
-
-@media (max-width: 429px) {
-  .content {
-    width: 360px;
-  }
-
-  .content img {
-    width: 200px;
-    top: 18px;
-    left: 58px;
-  }
-
-  .item p {
-    font-size: 0.6rem;
-  }
-
-  .dev,
-  .brand {
-    margin-bottom: 30px;
-  }
-
-  .creative {
-    right: 25px;
-  }
-}
-
-@media (max-width: 384px) {
-  .content {
-    width: 330px;
-  }
-
-  .content img {
-    width: 190px;
-    top: 20px;
-    left: 52px;
-  }
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @media (max-width: 528px) {
-    .content {
-      width: 410px;
-    }
-
-    .content img {
-      width: 1240px;
-      top: 25px;
-      left: 165px;
-    }
-    .creative {
-      right: 25px;
-    }
-  }
-}
-
 .gif3 img {
   width: 372px;
   height: 385px;
@@ -612,21 +371,17 @@ header {
 }
 
 .text-div4 h3 {
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 900;
-  line-height: 4.625rem;
-  letter-spacing: 0em;
+  line-height: 73.6px;
   text-align: center;
-  font-family: "MersadBlack";
   color: rgba(10, 53, 160, 1);
 }
 
 .text-div4 p {
-  font-family: "MersadBlack";
-  font-size: 2.25rem;
-  font-weight: 900;
-  line-height: 2.563rem;
-  letter-spacing: 0em;
+  font-size: 36px;
+  font-weight: 655;
+  line-height: 41.4px;
   text-align: center;
   color: rgba(10, 53, 160, 1);
 }
@@ -648,19 +403,11 @@ header {
 }
 @media (max-width: 482px) {
   .text-div4 h3 {
-    font-size: 2.9rem;
-  }
-}
-
-@media (max-width: 426px) {
-  .text-div4 h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 371px) {
-  .text-div4 h3 {
     font-size: 2rem;
+  }
+
+  .text-div4 p {
+    font-size: 1.2rem;
   }
 }
 
@@ -680,7 +427,6 @@ header {
   --bs-accordion-inner-border-radius: none;
 }
 .accordion-body ul li {
-  font-family: "MersadMed" !important;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -716,7 +462,6 @@ header {
 }
 
 .accordion-button {
-  font-family: "MersadExtBd";
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.75rem;
@@ -770,20 +515,17 @@ hr {
 }
 
 .text-div5 h3 {
-  font-family: "MersadBlack";
   font-size: 40px;
   font-weight: 900;
   line-height: 46px;
-  letter-spacing: 0em;
   color: rgba(10, 53, 160, 1);
   text-align: center;
 }
 
 .text-div5 p {
-  font-family: "Mersad";
   font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0em;
+  font-weight: 293;
+  line-height: 27.6px;
   color: rgba(10, 53, 160, 1);
   text-align: center;
 }
@@ -794,6 +536,21 @@ hr {
   }
 }
 
+@media (max-width: 480px) {
+  .text-div5 h3 {
+    font-size: 22px;
+  }
+
+  .text-div5 p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:370px) {
+  .text-div5 h3 {
+    font-size: 18px;
+  }
+}
 .contpadding4 {
   padding-top: 150px;
 }
@@ -847,17 +604,14 @@ hr {
 }
 
 .text-div6 h3 {
-  font-family: "MersadBlack";
   font-size: 64px;
   font-weight: 900;
-  line-height: 74px;
-  letter-spacing: 0em;
+  line-height: 73.6px;
   color: rgba(10, 53, 160, 1);
   text-align: center;
 }
 
 .text-div6 p {
-  font-family: "MersadBlack";
   font-size: 36px;
   font-weight: 900;
   line-height: 41px;
@@ -890,13 +644,13 @@ hr {
 
 @media (max-width: 439px) {
   .text-div6 h3 {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 432px) {
   .text-div6 p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .contpadding5 {
@@ -963,7 +717,6 @@ hr {
   line-height: 12px;
   letter-spacing: 0em;
   color: rgba(255, 255, 255, 1);
-  font-family: "MersadThin";
 }
 
 .imageservice h2 {
@@ -973,7 +726,6 @@ hr {
   line-height: 28px;
   letter-spacing: 0em;
   color: rgba(255, 255, 255, 1);
-  font-family: "MersadExtBd";
 }
 
 .imageservice h3 {
@@ -981,7 +733,6 @@ hr {
   line-height: 15px;
   letter-spacing: 0em;
   color: rgba(255, 255, 255, 1);
-  font-family: "Mersad";
 }
 
 .image-box svg {
@@ -1061,7 +812,6 @@ hr {
   font-weight: 900;
   line-height: 41px;
   letter-spacing: 0em;
-  font-family: "MersadBlack";
   text-transform: uppercase;
   color: rgba(10, 53, 160, 1);
   text-align: center;
@@ -1070,11 +820,10 @@ hr {
 .text-div7 p {
   font-size: 64px;
   font-weight: 900;
-  line-height: 74px;
-  letter-spacing: 0em;
-  font-family: "MersadBlack";
+  line-height: 73.6px;
   color: rgba(10, 53, 160, 1);
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -1094,18 +843,19 @@ hr {
 
 @media (max-width: 454px) {
   .text-div7 h3 {
-    font-size: 25px;
+    font-size: 23px;
   }
   .text-div7 p {
-    font-size: 37px;
+    font-size: 27px;
   }
 }
 
-@media (max-width: 401px) {
+@media (max-width:370px) {
   .text-div7 p {
-    font-size: 32px;
+    font-size: 20px;
   }
 }
+
 .contpadding6 {
   padding: 100px 0px 10px 0px;
 }
@@ -1130,10 +880,10 @@ hr {
   font-weight: 800;
   line-height: 28px;
   letter-spacing: 0em;
-  font-family: "MersadExtBd";
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: none;
 }
 
 .input-container button:hover {
@@ -1154,7 +904,6 @@ input::-webkit-input-placeholder {
   font-weight: 293;
   line-height: 25px;
   letter-spacing: 0em;
-  font-family: "Mersad";
   color: rgba(10, 53, 160, 0.55);
 }
 
@@ -1163,7 +912,6 @@ input::-moz-placeholder {
   font-weight: 293;
   line-height: 25px;
   letter-spacing: 0em;
-  font-family: "Mersad";
   color: rgba(10, 53, 160, 0.55);
 }
 
@@ -1172,7 +920,6 @@ input:-ms-input-placeholder {
   font-weight: 293;
   line-height: 25px;
   letter-spacing: 0em;
-  font-family: "Mersad";
   color: rgba(10, 53, 160, 0.55);
 }
 
@@ -1181,7 +928,6 @@ input::-ms-input-placeholder {
   font-weight: 293;
   line-height: 25px;
   letter-spacing: 0em;
-  font-family: "Mersad";
   color: rgba(10, 53, 160, 0.55);
 }
 
@@ -1190,7 +936,6 @@ input::placeholder {
   font-weight: 293;
   line-height: 25px;
   letter-spacing: 0em;
-  font-family: "Mersad";
   color: rgba(10, 53, 160, 0.55);
 }
 
@@ -1281,7 +1026,6 @@ footer img {
   text-align: center;
   font-size: 16px;
   margin-top: 10px;
-  font-family: "MersadExtBd";
   color: rgb(177, 7, 7);
   display: none;
 }
@@ -1327,7 +1071,6 @@ footer img {
   }
 
   .footer-content-privacy a {
-    font-family: "Mersad" !important;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0em;
@@ -1336,7 +1079,6 @@ footer img {
   }
 
   .footer-content-brand-name {
-    font-family: "MersadSemBd" !important;
     font-size: 17px;
     font-weight: 523;
     line-height: 23px;
@@ -1394,7 +1136,6 @@ footer img {
   }
 
   .nav-link:hover {
-    font-family: "MersadBold";
     color: rgba(252, 246, 238, 1);
   }
 
@@ -1468,7 +1209,7 @@ footer img {
 
 @media (max-width: 431px) {
   .intro-section h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1513,3 +1254,123 @@ footer img {
     font-size: 12px;
   }
 }
+
+@supports (hanging-punctuation: first) and (font: -apple-system-body) and
+  (-webkit-appearance: none) {
+  @media (max-width: 482px) {
+    .text-div4 h3 {
+      font-size: 2.3rem;
+    }
+  }
+
+  @media (max-width: 454px) {
+    .text-div7 h3 {
+      font-size: 25px;
+    }
+    .text-div7 p {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 489px) {
+    .text-div3 h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 528px) {
+    .content img {
+      width: 240px;
+      top: 20px;
+      left: 60px;
+    }
+
+    .creative {
+      right: 18px;
+    }
+  }
+}
+
+.testcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .testcontent img {
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* @font-face {
+  font-family: "MersadMed";
+  src: url("../Mersad/WebTT/Mersad Medium.eot");
+  src: url("../Mersad/WebTT/Mersad Medium.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Medium.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadBlack";
+  src: url("../Mersad/WebTT/Mersad Black.eot");
+  src: url("../Mersad/WebTT/Mersad Black.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Black.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mersad";
+  src: url("../Mersad/WebTT/Mersad Regular.eot");
+  src: url("../Mersad/WebTT/Mersad Regular.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Regular.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadBold";
+  src: url("../Mersad/WebTT/Mersad Bold.eot");
+  src: url("../Mersad/WebTT/Mersad Bold.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Bold.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MersadExtBd";
+  src: url("../Mersad/WebTT/Mersad ExtraBold.eot");
+  src: url("../Mersad/WebTT/Mersad ExtraBold.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad ExtraBold.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadSemBd";
+  src: url("../Mersad/WebTT/Mersad SemiBold.eot");
+  src: url("../Mersad/WebTT/Mersad SemiBold.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad SemiBold.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MersadThin";
+  src: url("../Mersad/WebTT/Mersad Thin.eot");
+  src: url("../Mersad/WebTT/Mersad Thin.eot") format("embedded-opentype"),
+    url("../Mersad/WebTT/Mersad Thin.woff") format("woff"),
+    url("../Mersad/WebTT/Mersad Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+} */

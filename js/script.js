@@ -141,7 +141,7 @@ let languageChanger = document.getElementById("changelanguage");
 // let arrow3 = document.getElementById("arrow3");
 // let arrow4 = document.getElementById("arrow4");
 let isEnglish = true;
-
+let contentImage = document.getElementById("contentimg");
 languageChanger.addEventListener("click", async function () {
   try {
     let jsonData;
@@ -151,6 +151,7 @@ languageChanger.addEventListener("click", async function () {
       jsonData = await response.json();
       isEnglish = false;
       languageChanger.classList.add("test");
+      contentImage.src = "../Images/Group 55.svg";
       // arrow3.classList.add("arrow3eng");
       // arrow4.classList.add("arrow4eng");
     } else {
@@ -158,6 +159,7 @@ languageChanger.addEventListener("click", async function () {
       jsonData = await response.json();
       isEnglish = true;
       languageChanger.classList.remove("test");
+      contentImage.src = "../Images/Group 58.svg";
       // arrow3.classList.remove("arrow3eng");
       // arrow4.classList.remove("arrow4eng");
     }
@@ -318,5 +320,3 @@ function toggleMeetingButton() {
     }
   }
 }
-
-ScrollReveal().reveal(".scrollsmooth", { reset: true });
